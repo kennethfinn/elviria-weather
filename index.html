@@ -4,13 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0a1220">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Elviria Værmelding">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=1">
+  <link rel="manifest" href="/site.webmanifest?v=1">
   <meta name="description" content="Oppdatert værmelding for Elviria basert på ni værmodeller.">
   <link rel="canonical" href="https://elviria.didwell.no/">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="nb_NO">
   <meta property="og:site_name" content="DidWell Vær">
-  <meta property="og:title" content="Elviria - DidWell Weather Services – værmelding">
+  <meta property="og:title" content="Elviria Værmelding – værmelding">
   <meta property="og:description" content="Oppdatert værmelding for Elviria basert på ni værmodeller.">
   <meta property="og:url" content="https://elviria.didwell.no/">
   <meta property="og:image" content="https://elviria.didwell.no/og-elviria-v1.jpg?v=1">
@@ -18,13 +24,13 @@
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Elviria - DidWell Weather Services – værmelding basert på 9 værmodeller">
+  <meta property="og:image:alt" content="Elviria Værmelding – værmelding basert på 9 værmodeller">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Elviria - DidWell Weather Services – værmelding">
+  <meta name="twitter:title" content="Elviria Værmelding – værmelding">
   <meta name="twitter:description" content="Oppdatert værmelding for Elviria basert på ni værmodeller.">
   <meta name="twitter:image" content="https://elviria.didwell.no/og-elviria-v1.jpg?v=1">
-  <title>Elviria - DidWell Weather Services</title>
+  <title>Elviria Værmelding</title>
   <style>
     :root{
       color-scheme:dark;
@@ -196,7 +202,7 @@
 <div class="wrap">
   <header>
     <div>
-      <h1>Elviria - DidWell Weather Services</h1>
+      <h1>Elviria Værmelding</h1>
       <div id="locationSub" class="sub">36,49176°N · 4,77898°V · høyde hentes · 7 døgn · v1.33 · oppdateres automatisk når siden åpnes</div>
     </div>
     <div class="actions">
@@ -1417,7 +1423,7 @@
   $('shareBtn').addEventListener('click', async () => {
     try{
       if(navigator.share){
-        await navigator.share({title:'Elviria - DidWell Weather Services',text:'Oppdatert multimodell-værvarsel for Elviria',url:location.href});
+        await navigator.share({title:'Elviria Værmelding',text:'Oppdatert multimodell-værvarsel for Elviria',url:location.href});
       }else{
         await navigator.clipboard.writeText(location.href);
         const old = $('shareBtn').textContent;
